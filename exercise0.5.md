@@ -25,6 +25,7 @@ sequenceDiagram
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
 
-    Note right of browser: The browser executes the callback function that stores the response in a variable and calls a function that renders the content of this variable. 
+    Note right of browser: The browser executes the callback function that stores the response in a variable and calls a function that renders the content of this variable.
+    Note right of browser: The browser executes a callback function based on the window.load Event that registers a custom event handler for the Submit Event to the form. 
 
 ```
